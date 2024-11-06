@@ -1,0 +1,48 @@
+.repoItemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    --padding: 15px;
+    padding: var(--padding);
+    width: calc(300px - var(--padding) * 2);
+    height: calc(120px - var(--padding) * 2);
+
+    border-radius: 12px;
+
+    border: none;
+    background-color: whitesmoke;
+
+    position: relative;
+}
+
+.repoTitle {
+    color: #2f2f2f;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.repoLink {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.deleteButton {
+    display: flex;
+    align-center: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.deleteButton:hover {
+    cursor: pointer;
+}
