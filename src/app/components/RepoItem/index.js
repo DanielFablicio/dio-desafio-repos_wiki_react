@@ -8,7 +8,12 @@ export default function RepoItem({ repo, buttonOnClick }) {
         className={styles.deleteButton}
         onClick={() => buttonOnClick(repo.id)}
       >
-        <Image src="/images/cross.png" width={24} height={24} alt="cross" />
+        <Image
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/cross.png`}
+          width={24}
+          height={24}
+          alt="cross"
+        />
       </button>
       <h3 className={styles.repoTitle}>{repo.name}</h3>
       <a

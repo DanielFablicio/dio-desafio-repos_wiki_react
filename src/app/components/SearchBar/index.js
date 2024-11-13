@@ -21,7 +21,7 @@ export default function SearchBar({
       ></input>
       <button className={styles.searchButton} onClick={buttonOnClick}>
         <Image
-          src="/images/lupa.png"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/lupa.png`}
           alt="Search Icon"
           width={24}
           height={24}
